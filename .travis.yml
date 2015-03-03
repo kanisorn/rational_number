@@ -5,7 +5,7 @@ jdk:
 deploy:
   provider: releases
   api_key: "3f300c5ed4ebb416b7d6ed3b67d6173fb2266bec"
-  file: "./bin/org/kanisorn/util/RationalNumber.class"
+  file: "bin/org/kanisorn/util/RationalNumber.class"
   skip_cleanup: true
   on:
     tags: true
