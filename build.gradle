@@ -1,7 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
 
-sourceCompatibility = 1.7
+sourceCompatibility = 1.8
 version = '1.0'
 jar {
     manifest {
@@ -28,4 +28,16 @@ uploadArchives {
            dirs 'repos'
        }
     }
+}
+task dist(type: Zip) {
+    dependsOn spiJar
+    from 'src/dist'
+    into('libs') {
+        from spiJar.archivePath
+        from configurations.runtime
+    }
+}
+
+artifacts {
+   archives dist
 }
