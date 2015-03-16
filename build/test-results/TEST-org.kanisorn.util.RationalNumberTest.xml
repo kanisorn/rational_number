@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.kanisorn.util.RationalNumberTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2015-02-25T00:15:44" hostname="jarvis.local" time="0.003">
+<testsuite name="org.kanisorn.util.RationalNumberTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2015-03-09T20:39:35" hostname="jarvis.local" time="0.003">
   <properties/>
-  <testcase name="testSum" classname="org.kanisorn.util.RationalNumberTest" time="0.002"/>
-  <testcase name="testToString" classname="org.kanisorn.util.RationalNumberTest" time="0.0"/>
+  <testcase name="testSum" classname="org.kanisorn.util.RationalNumberTest" time="0.001"/>
+  <testcase name="testToString" classname="org.kanisorn.util.RationalNumberTest" time="0.001"/>
   <testcase name="testExcceptionWhenQisLessThanOrEqualsZero" classname="org.kanisorn.util.RationalNumberTest" time="0.0"/>
   <testcase name="testMultiply" classname="org.kanisorn.util.RationalNumberTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
