@@ -42,7 +42,7 @@ public class RationalNumberTest {
 	
 	@Test
 	public void testToString() {
-		assertEquals("call method toString() should return p/q", p + "\\" + q, r1.toString());
+		assertEquals("call method toString() should return p/q", p + "/" + q, r1.toString());
 	}
 	
 	@Test
