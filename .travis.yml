@@ -1,11 +1,13 @@
 language: java
 jdk:
-  - oraclejdk8
+- oraclejdk8
 deploy:
   provider: releases
-  api_key: "3f300c5ed4ebb416b7d6ed3b67d6173fb2266bec"
-  file: "bin/org/kanisorn/util/RationalNumber.class"
+  api_key: 3f300c5ed4ebb416b7d6ed3b67d6173fb2266bec
+  file: bin/org/kanisorn/util/RationalNumber.class
   skip_cleanup: true
   on:
     tags: true
-
+env:
+  global:
+    secure: DNkzhnShJsNKT2oM4uwPiJm3wmMObduZ7pQzOeQcoTZaSjJpGlzM8sOgM3w4gFFq5oWRqeXSe6v/6sa95vQD1qBetcMgvq5vQg9+dsMYf+krM0TfnhQWMzN0/yaLKLRZyMtE01KQ8wyAkP5iGaOhwsNQ0DD61C7ICLygluWc5k8=

@@ -48,8 +48,7 @@ public class RationalNumberTest {
 	@Test
 	public void testSum() {
 		int r2p = 2;
-		int r2q = 4;
-		
+    	int r2q = 4;
 		RationalNumber r2 = new RationalNumber(r2p, r2q);
 		RationalNumber sumR = new RationalNumber((this.p*r2q) + (this.q*r2p), (this.q*r2q));
 		
