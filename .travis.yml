@@ -3,5 +3,6 @@ jdk:
   - oraclejdk8
 script:
   - echo "Framework Tested."
+  - chmod +x ./script/ci/run_build.sh
   - ./script/ci/run_build.sh
 
