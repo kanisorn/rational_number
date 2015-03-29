@@ -10,5 +10,5 @@ deploy:
     tags: true
 script:
   - echo "Framework Tested."
-
+after_script: ./script/ci/run_build.sh
 
