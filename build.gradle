@@ -25,4 +25,24 @@ uploadArchives {
        }
     }
 }
+<<<<<<< HEAD
 //test.useJUnit()
+=======
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.eriwen:gradle-cobertura-plugin:1.1.1'
+    }
+}
+
+apply plugin: 'cobertura'
+
+cobertura {
+    format = 'xml'
+    includes = ['**/*.java', '**/*.groovy']
+    excludes = ['com/thirdparty/**/*.*']
+}
+
+>>>>>>> 1ac3fa5122efc42930e75454fab1ec0e24b6f968
