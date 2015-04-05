@@ -1,5 +1,6 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
+apply from: 'cobertura.gradle'
 
 sourceCompatibility = 1.8
 version = '1.0'
@@ -26,6 +27,7 @@ uploadArchives {
     }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 //test.useJUnit()
 =======
 buildscript {
@@ -46,3 +48,5 @@ cobertura {
 }
 
 >>>>>>> 1ac3fa5122efc42930e75454fab1ec0e24b6f968
+=======
+>>>>>>> 82961185f5db0d9cb8d72cbc3ddd313d1f1b0125
