@@ -29,7 +29,12 @@ dependencies {
 }
 test {
     systemProperties 'property': 'value'
+    filter {
+        includeTestsMatching "*Test"
+        includeTestsMatching "*Spec"
+    }
 }
+
 uploadArchives {
     repositories {
        flatDir {
@@ -38,7 +43,9 @@ uploadArchives {
     }
 }
 cobertura {
-  coverageFormats = ['xml', 'html']
-  
-  
+    coverageFormats = ['html', 'xml']
+    coverageIgnoreTrivial = true
+    coverageIgnores = ['org.slf4j.Logger.*']
+    coverageReportDir = new File("$buildDir/reports/cobertura")
 }
+
