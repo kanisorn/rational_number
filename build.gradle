@@ -45,3 +45,6 @@ cobertura {
     coverageIgnores = ['org.slf4j.Logger.*']
 }
 
+configurations.all {
+    exclude module: 'slf4j-log4j12'
+}
