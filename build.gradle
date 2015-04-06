@@ -1,6 +1,17 @@
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+  dependencies {
+    classpath 'net.saliman:gradle-cobertura-plugin:2.2.7'
+  }
+}
+
+
 apply plugin: 'java'
 apply plugin: 'eclipse'
-apply from: 'cobertura.gradle'
+apply plugin: 'cobertura'
+
 
 sourceCompatibility = 1.8
 version = '1.0'
@@ -25,4 +36,9 @@ uploadArchives {
            dirs 'repos'
        }
     }
+}
+cobertura {
+  coverageFormats = ['xml', 'html']
+  
+  
 }
