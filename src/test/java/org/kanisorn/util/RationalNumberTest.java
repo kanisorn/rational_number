@@ -39,6 +39,13 @@ public class RationalNumberTest {
 	public void testExcceptionWhenQisLessThanOrEqualsZero() {
 		r1 = new RationalNumber(10, -10);
 	}
+
+	@Test(expected=IllegalArgumentException.class)
+	public void testCompareSomeOtherObject() {
+		r1 = new RationalNumber(10, -10);
+		String r2 = "2/3";
+		r1.compareTo(r2);
+	}
 	
 	@Test
 	public void testToString() {
