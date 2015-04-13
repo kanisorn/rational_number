@@ -46,6 +46,11 @@ public class RationalNumberTest {
 		String r2 = "2/3";
 		r1.compareTo(r2);
 	}
+	public void testEquals() {
+		r1 = new RationalNumber(10, -10);
+		RationalNumber r2 = new RationalNumber(10, -10);
+		r1.compareTo(r2);
+	}
 	
 	@Test
 	public void testToString() {
