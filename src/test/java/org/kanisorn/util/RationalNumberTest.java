@@ -53,7 +53,7 @@ public class RationalNumberTest {
 	}
 	public void testNotEquals() {
 		r1 = new RationalNumber(-10, 10);
-		RationalNumber r2 = new RationalNumber(-10, 10);
+		RationalNumber r2 = new RationalNumber(10, 10);
 		r1.equals(r2);
 	}
 	
