@@ -47,14 +47,14 @@ public class RationalNumberTest {
 		r1.compareTo(r2);
 	}
 	
-	@test
+	@Test
 	public void testEquals() {
 		r1 = new RationalNumber(10, 10);
 		RationalNumber r2 = new RationalNumber(10, 10);
 		r1.equals(r2);
 	}
 	
-	@test
+	@Test
 	public void testNotEquals() {
 		r1 = new RationalNumber(-10, 10);
 		RationalNumber r2 = new RationalNumber(10, 10);
