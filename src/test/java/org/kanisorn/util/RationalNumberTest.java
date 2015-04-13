@@ -46,11 +46,15 @@ public class RationalNumberTest {
 		String r2 = "2/3";
 		r1.compareTo(r2);
 	}
+	
+	@test
 	public void testEquals() {
 		r1 = new RationalNumber(10, 10);
 		RationalNumber r2 = new RationalNumber(10, 10);
 		r1.equals(r2);
 	}
+	
+	@test
 	public void testNotEquals() {
 		r1 = new RationalNumber(-10, 10);
 		RationalNumber r2 = new RationalNumber(10, 10);
@@ -65,7 +69,7 @@ public class RationalNumberTest {
 	@Test
 	public void testSum() {
 		int r2p = 2;
-    	int r2q = 4;
+    		int r2q = 4;
 		RationalNumber r2 = new RationalNumber(r2p, r2q);
 		RationalNumber sumR = new RationalNumber((this.p*r2q) + (this.q*r2p), (this.q*r2q));
 		
