@@ -42,13 +42,18 @@ public class RationalNumberTest {
 
 	@Test(expected=IllegalArgumentException.class)
 	public void testCompareSomeOtherObject() {
-		r1 = new RationalNumber(10, -10);
+		r1 = new RationalNumber(10, 10);
 		String r2 = "2/3";
 		r1.compareTo(r2);
 	}
 	public void testEquals() {
-		r1 = new RationalNumber(10, -10);
-		RationalNumber r2 = new RationalNumber(10, -10);
+		r1 = new RationalNumber(10, 10);
+		RationalNumber r2 = new RationalNumber(10, 10);
+		r1.equals(r2);
+	}
+	public void testNotEquals() {
+		r1 = new RationalNumber(-10, 10);
+		RationalNumber r2 = new RationalNumber(-10, 10);
 		r1.equals(r2);
 	}
 	
