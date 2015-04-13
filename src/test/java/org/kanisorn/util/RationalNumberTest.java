@@ -49,7 +49,7 @@ public class RationalNumberTest {
 	public void testEquals() {
 		r1 = new RationalNumber(10, -10);
 		RationalNumber r2 = new RationalNumber(10, -10);
-		r1.compareTo(r2);
+		r1.equals(r2);
 	}
 	
 	@Test
