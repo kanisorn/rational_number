@@ -62,6 +62,13 @@ public class RationalNumberTest {
 	}
 	
 	@Test
+	public void testCompare() {
+		r1 = new RationalNumber(100, 10);
+		RationalNumber r2 = new RationalNumber(10, 10);
+		r1.equals(r2);
+	}
+	
+	@Test
 	public void testToString() {
 		assertEquals("call method toString() should return p/q", p + "/" + q, r1.toString());
 	}
